@@ -3,7 +3,7 @@ import logo from "../assets/logo.png";
 
 export default function Navbar() {
   return (
-    <nav className="bg-transparent  backdrop-blur-md fixed top-0 left-0 w-full z-50 text-white py-4 shadow-md">
+    <nav className="absolute top-0 left-0 w-full z-50 bg-transparent backdrop-blur-md text-white py-4">
         <div className="container mx-auto flex justify-between items-center px-8">
       <img src={logo} alt="MyCompany Logo" className="w-20 md:w-28 h-auto object-contain" />
       <ul className="flex space-x-6">

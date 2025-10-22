@@ -1,21 +1,22 @@
-export default function Services() {
-  const services = [
-    { title: "Web Development", desc: "Modern and responsive websites." },
-    { title: "App Development", desc: "Cross-platform mobile applications." },
-    { title: "UI/UX Design", desc: "User-friendly and visually appealing designs." },
-  ];
+import Navbar from "../components/Navbar-2";
+import Package from "../components/Service/Package";
+import Benefit from "../components/Service/Benefit";
+import Work from "../components/Service/Work";
+import Consultation from "../components/Service/Consultation";
+import Contact from "../components/Home/Contact";
+import Footer from "../components/Footer";
 
+
+export default function About() {
   return (
-    <section className="py-20 px-8 text-center bg-gray-50">
-      <h2 className="text-3xl font-bold mb-8">Our Services</h2>
-      <div className="grid md:grid-cols-3 gap-8">
-        {services.map((s, i) => (
-          <div key={i} className="bg-white shadow-md p-6 rounded-lg hover:shadow-lg transition">
-            <h3 className="text-xl font-semibold mb-2">{s.title}</h3>
-            <p className="text-gray-600">{s.desc}</p>
-          </div>
-        ))}
-      </div>
-    </section>
+    <>
+      <Navbar />  
+      <Package />
+      <Benefit />
+      <Work />
+      <Consultation />
+      <Contact />
+      <Footer />
+    </>
   );
 }

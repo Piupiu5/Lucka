@@ -4,6 +4,7 @@ import Reason from "../components/Home/Reason";
 import Lvlup from "../components/Home/Lvlup";
 import Testi from "../components/Home/Testi";
 import Contact from "../components/Home/Contact";
+import Footer from "../components/Footer";
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <Lvlup />
       <Testi />
       <Contact />
+      <Footer />
     </>
   );
 }

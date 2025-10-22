@@ -1,4 +1,5 @@
 import { Quote } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const TestimonialSection = () => {
   const testimonials = [
@@ -45,12 +46,18 @@ const TestimonialSection = () => {
       </div>
 
       {/* Tombol Selengkapnya */}
-      <div className="mt-12 flex justify-end pr-10">
-        <button className="flex items-center text-orange-500 font-semibold hover:underline">
-          Selengkapnya
-          <span className="ml-2 text-xl">↗</span>
-        </button>
-      </div>
+      
+
+<div className="mt-12 flex justify-end pr-10">
+  <Link
+    to="/testimoni"
+    className="flex items-center text-orange-500 font-semibold hover:underline"
+  >
+    Selengkapnya
+    <span className="ml-2 text-xl">↗</span>
+  </Link>
+</div>
+
     </section>
 
     
